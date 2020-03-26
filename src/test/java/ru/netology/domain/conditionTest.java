@@ -1,7 +1,7 @@
 package ru.netology.domain;
 
 import org.junit.jupiter.api.Test;
-import ru.condition;
+import ru.netology.domain.condition;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -17,7 +17,18 @@ public class conditionTest {
         int actual = currentTemperature;
         int expected = 17;
         assertEquals(actual, expected);
+    }
 
+        @Test
+        public void decreaseCurrentTemperature() {
+            condition myCondition = new condition();
+            int currentTemperature = 16;
+            int minTemperature = 13;
+            if (currentTemperature > minTemperature)
+                currentTemperature = currentTemperature - 1;
+            int actual = currentTemperature;
+            int expected = 15;
+            assertEquals(actual, expected);
     }
 
 }

@@ -1,15 +1,16 @@
-package ru.netology;
+package ru.netology.domain;
 
 public class condition {
     int maxTemperature;
     int currentTemperature;
 
-       public  void increaseCurrentTemperature(int currentTemperature) {
-        if (currentTemperature < maxTemperature)
-            currentTemperature = currentTemperature + 1;
+    public void increaseCurrentTemperature(int currentTemperature) {
+
     }
 
 }
+
+
 
 
 

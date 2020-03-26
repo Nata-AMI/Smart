@@ -1,7 +1,7 @@
 package ru.netology.domain;
 
 import org.junit.jupiter.api.Test;
-import ru.netology.condition;
+import ru.condition;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,9 +12,11 @@ public class conditionTest {
         condition myCondition = new condition();
         int currentTemperature = 16;
         int maxTemperature = 27;
-        int actual = int increaseCurrentTemperature(currentTemperature);
+        if (currentTemperature < maxTemperature)
+            currentTemperature = currentTemperature + 1;
+        int actual = currentTemperature;
         int expected = 17;
-        assertEquals(actual,expected);
+        assertEquals(actual, expected);
 
     }
 

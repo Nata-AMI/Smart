@@ -6,10 +6,9 @@ public class Condition {
     int currentTemperature;
 
     public void setCurrentTemperature(int currentTemperature) {
-
     }
-    public void increaseCurrentTemperature(int currentTemperature) {
 
+    public void increaseCurrentTemperature(int currentTemperature) {
     }
 }
 

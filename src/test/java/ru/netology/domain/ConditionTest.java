@@ -25,11 +25,10 @@ public class ConditionTest {
         int currentTemperature = 16;
         int minTemperature = 13;
         if (currentTemperature > minTemperature)
-            currentTemperature = - 1;
+            currentTemperature = -1;
         int actual = currentTemperature;
         int expected = 15;
         assertEquals(actual, expected);
     }
-
 }
 

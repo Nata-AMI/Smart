@@ -10,25 +10,17 @@ public class ConditionTest {
     @Test
     public void increaseCurrentTemperature() {
         Condition myCondition = new Condition();
-        int currentTemperature = 16;
-        int maxTemperature = 27;
-        if (currentTemperature < maxTemperature)
-            currentTemperature =currentTemperature +1;
-        int actual = currentTemperature;
-        int expected = 17;
-        assertEquals(actual, expected);
+        myCondition.setCurrentTemperature(16);
+        myCondition.increaseCurrentTemperature();
+        assertEquals(17, myCondition.getCurrentTemperature());
     }
 
     @Test
     public void decreaseCurrentTemperature() {
         Condition myCondition = new Condition();
-        int currentTemperature = 16;
-        int minTemperature = 13;
-        if (currentTemperature > minTemperature)
-            currentTemperature = currentTemperature-1;
-        int actual = currentTemperature;
-        int expected = 15;
-        assertEquals(actual, expected);
+        myCondition.setCurrentTemperature(16);
+        myCondition.decreaseCurrentTemperature();
+        assertEquals(15, myCondition.getCurrentTemperature());
     }
 }
 
